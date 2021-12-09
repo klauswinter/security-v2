@@ -8,11 +8,13 @@ public interface UserDao {
 
     void saveUser(User user);
 
-    void updateUser(long id, User user);
+    void updateUser(Long id, User user);
 
-    User getUserById(long id);
+    User getUserById(Long id);
 
-    void removeUserById(long id);
+    User getByName(String name);
+
+    void removeUserById(Long id);
 
     List<User> getAllUsers();
 }
